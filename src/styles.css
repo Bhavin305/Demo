@@ -1,13 +1,18 @@
 .App {
   font-family: sans-serif;
   display: flex;
+  height: 100vh;
 
 }
 .leftDiv {
-  flex:1
+  flex:1;
+  background-color: whitesmoke;
 }
 .rightBg {
-  flex:4
+  flex:4;
+  background-image: url("./assets/hazy_background_tile.png");
+  background-repeat: repeat;
+  text-align: center;
 }
 
 .mr-tp-one {
@@ -50,9 +55,14 @@
 
 ul li a {
   text-decoration: none;
+  display: inline-block;
+  width: 100%;
 }
 
-
+ul li:hover {
+  background-image: url("./assets/hazy_background_tile.png");
+  background-repeat: repeat;
+}
 
 ul li {
   list-style: none;
@@ -65,4 +75,8 @@ ul li {
 ul {
   width: 100%;
   padding-inline-start: 0px;
+}
+
+body, html{
+  margin: 0px;
 }

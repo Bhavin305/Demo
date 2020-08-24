@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import "./styles.css";
 import Page1 from "./Pages/Page1";
 import Page2 from "./Pages/Page2";
@@ -14,13 +14,13 @@ export default function App() {
         <div className="leftDiv">
         <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink exact activeClassName="selected" to="/" >Home</NavLink>
         </li>
         <li>
-          <Link to="/page1">Page1</Link>
+          <NavLink exact activeClassName="selected" to="/page1">Page1</NavLink>
         </li>
         <li>
-          <Link to="/page2">Page2</Link>
+          <NavLink exact activeClassName="selected" to="/page2">Page2</NavLink>
         </li>
       </ul>
         </div>
